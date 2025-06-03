@@ -1,5 +1,5 @@
 body{
-    /*background: #1f242d;*/
+    /* background: #626f88; */
 }
 
 a{
@@ -21,6 +21,7 @@ text text-decoration: none;
     opacity: 0;
     animation: show-content 1.5s linear forwards;
     animation-delay: 1.2s;
+    background-color: gray;
 }
 @keyframes show-content{
     100%{
@@ -49,7 +50,7 @@ text text-decoration: none;
 }
 
 .list a:hover, .list a.active{
-    color: greenyellow;
+    color: orangered;
 
 }
 .home {
@@ -110,7 +111,7 @@ text text-decoration: none;
     font-size: 20px;
     margin: 10px 0 25px;
 }
-.home-info .btn-sci{
+ .btn-sci{
     display: flex;
     align-items: center;
 
@@ -123,12 +124,12 @@ text text-decoration: none;
     border-radius: 40px;
     box-shadow:0 0 10px greenyellow;
     font-size: 15px;
-    color:black;
+     color:black;
     font-weight: 600;
     transition: .5s;
 
-}
-.btn:hover{
+} 
+ .btn:hover{
     background:orangered;
     color:#7cf03d;
     box-shadow: none;
@@ -150,19 +151,19 @@ text text-decoration: none;
     background:orangered;
     color:#1f242d;
     box-shadow:none;
-}
-.home-img{
+} 
+ .home-img{
 display:flex;
 justify-content: flex-end;
-}
+} 
 .home-img .img-box{
     position: relative;
     width:32vw;
     height:32vw;
     border-radius: 50%;
     padding:5px;
-    display: flex;
-    justify-content: center;
+     display: flex;
+    justify-content: center; 
     align-items: center;
 }
 /*.home-img .img-box::before
@@ -193,15 +194,15 @@ display: flex;
 justify-content: center;
 z-index: 1;
 overflow: hidden;
-}
-.home-img .img-box .img-item img {
+} 
+ .home-img .img-box .img-item img {
 top: 30px;
 position:absolute;
 display: block;
 width:85%;
 object-fit: cover;
 mix-blend-mode: lighten;
-}
+} 
 .bars-animation{
     position: absolute;
     width: 100%;
@@ -222,4 +223,51 @@ mix-blend-mode: lighten;
     100%{
         transform: translateY(0%);
     }
+}
+.Services{
+    display: flex;
+    align-items: center;
+    background: #1f242d;
+}
+
+.Services ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.Services li {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Services img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+}
+
+.Services img:hover {
+    transform: translateY(-5px);
+}
+.Services p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #6ec53f;
+
+}
+
+.Contacts{
+    flex:0 0 auto;
+    display: flex;
+    flex-direction: row;
+    
 }
